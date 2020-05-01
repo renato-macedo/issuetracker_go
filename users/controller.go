@@ -106,5 +106,5 @@ func (controller *Controller) Register(c echo.Context) error {
 		c.JSON(http.StatusInternalServerError, utils.NewServerError("It was not possible to "))
 	}
 
-	return c.JSON(http.StatusCreated, utils.NewSuccess("user registered"))
+	return c.JSON(http.StatusCreated, utils.NewOkReponse("user registered"))
 }

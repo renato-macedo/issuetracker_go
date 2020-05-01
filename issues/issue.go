@@ -13,7 +13,7 @@ type Issue struct {
 
 // IssueDTO to bind requests
 type IssueDTO struct {
-	Title       string
-	Description string
-	AuthorID    int
+	Title       string `json:"title" validate:"required"`
+	Description string `json:"description" validate:"required"`
+	AuthorID    int    `json:"author" validate:"required"`
 }
